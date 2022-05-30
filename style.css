@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background: rgba(158, 155, 155, 0.837);
+}
+
+.hero{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+nav {
+    /* padding: 20px 0; */
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.hero nav ul{
+    transition: 1s;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+.active{
+    color: #fff;
+}
+
+.hero nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.hero nav ul li a:hover{
+    color: #fff;
+    transform: scale(1.2);
+    
+}
+
+.second {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+}
+
+.second div {
+    width: 50%;
+    /* padding: 20vh 0vh; */
+}
+
+.second .my{
+    width: 50%;
+    padding: 20vh 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second .text .fotos{
+    width: 100%;
+    display: flex;
+}
+
+.second .text .bbb{
+    width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second .text .fotos .bbb img{
+    width: 95%;
+    
+    /* margin: auto; */
+}
+
+.second .foto2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.second .text h1 {
+    margin-bottom: 40px;
+}
+
+.second .foto2 img {
+    height: auto;
+    position: absolute;
+    transition: transform 0.5s ease-in;
+}
+
+.second .foto2 .web {
+    width: 40vw;
+}
+
+.second .foto2 .fon {
+    width: 30vw;
+}
+
+.second .foto2:hover .web {
+    transform: scale(1.2);
+}
+
+.second .foto2:hover .fon {
+    transform: scale(0.8)
+}
